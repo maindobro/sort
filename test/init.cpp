@@ -5,15 +5,6 @@
 #include <fstream>
 using namespace std;
 
-SCENARIO("32mb", "[32mb]")
-{
-	std::chrono::time_point<std::chrono::system_clock> start, end;
-	start = std::chrono::system_clock::now();
-	sorting("32mb", "out_32", 17);
-	end = std::chrono::system_clock::now();
-	cout <<"32MB- " <<(end - start).count() <<" nanoseconds"<< endl;
-  REQUIRE(1);
-}
 SCENARIO("15mb", "[15mb]")
 {
 	std::chrono::time_point<std::chrono::system_clock> start, end;
